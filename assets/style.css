@@ -1,3 +1,14 @@
+body{
+    background-image: linear-gradient(to right, #363636, #4F4F4F);
+    color:aliceblue;
+}
+
+.rules {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
 .fightarea {
     display: flex;
     gap: 10px;
@@ -20,7 +31,62 @@
 }
 
 .log{
+    scroll-behavior: smooth;
     border: 1px dotted #999;
     height: 250px;
     overflow-y: scroll;
+}
+
+.turn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.turn button {
+    background-color: green;
+    font-size: larger;
+}
+
+.turnPlayer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.start {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.start button {
+    background-color: green;
+    font-size: large;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+select {
+    background-color: #4F4F4F;
+    color:aliceblue
+}
+
+button {
+    margin-top: 5px;
+    background-color: #FF0000;
+    color:aliceblue;
+    padding: 5px;
+    font-size:medium;
 }
