@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,68 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>Luta</title>
 </head>
+
 <body>
+    <div class="rules">
+        <h1>REGRAS DO JOGO</h1>
+        <p>Escolha um personagem para jogar e uma aberração para enfrenta</p>
+        <p>Cada personagem possui caracteristicas únicas, como:<br>
+        <ul>
+            <p>
+                Força de ataque<br>
+                Capacidade de defesa<br>
+                Quantidade de vida
+            </p>
+        </ul>
+        </p>
+        <p>Escolha com sabedoria seu personagem e seu oponente</p>
+        <p>Após escolher os personagens clique no botão para iniciar o jogo<br>
+            Quando o jogo iniciar aparecerá um botão para sortear a vez de quem vai atacar. Clique no botão de ataque do personagem sorteado e sorteie novamente.
+        </p>
+
+        <h3>Boa Sorte!</h3>
+    </div>
     <div class="fightarea">
         <div id="char">
+            <div class="photoChar"></div>
             <div class="lifebar">
                 <div class="bar" style="width: 10%"></div>
             </div>
             <strong class="name">--</strong>
-            <div>
+            <div class="attackButon">
                 <button class="attackButon">Atacar</button>
             </div>
+            <select name="charName" id="charName">
+                <option value="Knight">Cavaleiro</option>
+                <option value="Wizard">Mago</option>
+            </select>
         </div>
         <div id="freak">
+            <div class="photoFreak"></div>
             <div class="lifebar">
                 <div class="bar" style="width: 10%"></div>
             </div>
             <strong class="name">--</strong>
-            <div>
+            <div class="attackButon">
                 <button class="attackButon">Atacar</button>
             </div>
+            <select name="freakName" id="freakName">
+                <option value="Monster">Monstro</option>
+                <option value="Haunt">Assombração</option>
+            </select>
         </div>
     </div>
+    <div class="turn">
+        <button>Sortear</button>
+    </div>
+    <div class="turnPlayer"></div>
 
     <ul class="log"></ul>
+
+    <div class="start"><button>Começar!</button></div>
 
     <script src="assets/class.js"></script>
     <script src="assets/script.js"></script>
 </body>
+
 </html>
