@@ -66,8 +66,8 @@ startFight.addEventListener('click', () => {
 
     if (typeChar == 'Knight' && typeFreak == 'Haunt') {
 
-        addPhotoChar('../image/cavaleiro.png');
-        addPhotoFreak('../image/assombracao.png');
+        addPhotoChar('/image/cavaleiro.png');
+        addPhotoFreak('/image/assombracao.png');
 
         let char = new Knight('Cavaleiro');
         let freak = new Haunt();
@@ -86,8 +86,8 @@ startFight.addEventListener('click', () => {
 
     if (typeChar == 'Wizard' && typeFreak == 'Monster') {
 
-        addPhotoChar('../image/mago.png');
-        addPhotoFreak('../image/monstro.png');
+        addPhotoChar('/image/mago.png');
+        addPhotoFreak('/image/monstro.png');
 
         let char = new Wizard('Mago');
         let freak = new Monster();
@@ -106,8 +106,8 @@ startFight.addEventListener('click', () => {
 
     if (typeChar == 'Wizard' && typeFreak == 'Haunt') {
 
-        addPhotoChar('../image/mago.png');
-        addPhotoFreak('../image/assombracao.png');
+        addPhotoChar('/image/mago.png');
+        addPhotoFreak('/image/assombracao.png');
 
         let char = new Wizard('Mago');
         let freak = new Haunt();
